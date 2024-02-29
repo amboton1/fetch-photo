@@ -1,0 +1,5 @@
+<div *ngIf="images$ | async as images">
+    <img [src]="images.urls.small" alt="Unsplash Photo" />
+</div>
+
+<button (click)="getPhoto()">Get photo</button>
